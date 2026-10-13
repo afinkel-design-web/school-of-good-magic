@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+<head>
+ <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Школа доброй магии — фонд «Правмир»</title>
+ <meta name="description" content="Узнайте свою волшебную силу в Школе доброй магии фонда «Правмир». Пройдите распределение и выберите свой способ помогать.">
+ <meta property="og:title" content="Ваше письмо из Школы доброй магии уже здесь!">
+ <meta property="og:description" content="Пройдите распределение, узнайте свою волшебную силу и подарите кому-то настоящее чудо вместе с фондом «Правмир».">
+ <meta property="og:type" content="website"><meta name="theme-color" content="#252a40">
+ <link rel="icon" href="assets/crest-renatus.webp"><link rel="preload" href="assets/Kereru-Bold-Italic.otf" as="font" type="font/otf" crossorigin>
+ <link rel="stylesheet" href="styles.css"><script defer src="app.bundle.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<header class="header" id="header"><div class="header-inner">
+ <a href="https://fondpravmir.ru/" target="_blank" rel="noopener" aria-label="Благотворительный фонд Правмир"><img class="logo" src="assets/logo.svg" alt="Правмир — благотворительный фонд" width="180" height="42"></a>
+ <nav aria-label="Основная навигация"><a href="#faculties">Факультеты</a><a class="button small" href="#donation">Помочь сейчас <span aria-hidden="true">✦</span></a></nav>
+</div></header>
+<main id="main">
+ <section class="hero" aria-labelledby="hero-title"><div class="hero-inner">
+  <img class="hero-owl" src="assets/hero-owl.webp" alt="Сова несёт приглашение в Школу доброй магии" width="1398" height="1212" fetchpriority="high">
+  <div class="hero-copy"><p class="eyebrow">Новогодняя благотворительная акция БФ «Правмир»</p><h1 id="hero-title">В этот Новый год<br>письмо нашло<br>Вас само!</h1><p>Письмо, которое меняет всё. Приглашение в Школу волшебства, о котором Вы мечтали.</p><p>Сегодня Вы откроете таинственный конверт — и узнаете свой факультет. Пусть магия станет опорой для тех, кому она нужна.</p><p class="hero-last">Пройдите распределение и узнайте, в чём Ваша истинная сила.</p><a class="button hero-cta" href="#magic" data-open-envelope>Пройти распределение <span aria-hidden="true">✦</span></a></div>
+ </div></section>
+ <section id="magic" class="magic" aria-label="Письмо и распределение по факультетам"><div id="stage" class="stage"></div></section>
+ <section id="stories" class="section stories" aria-labelledby="stories-title"><div class="section-heading"><h2 id="stories-title">За каждой магией —<br>настоящая помощь</h2><p>Здесь волшебная сила становится добрым делом.<br>Познакомьтесь с теми, кому Вы можете помочь.</p></div><article id="story" class="story panel"></article></section>
+ <section id="faculties" class="faculties section" aria-labelledby="faculties-title"><div class="section-heading"><h2 id="faculties-title">Четыре факультета.<br>Четыре способа помогать.</h2><p>У каждого факультета — своя сила.<br>Вы можете поддержать любой: выбирайте то, что ближе Вашему сердцу.</p></div><div id="faculty-cards" class="faculty-grid"></div></section>
+ <section id="donation" class="section donation panel" aria-labelledby="donation-title"><div class="donation-copy"><h2 id="donation-title">Факультет выбрал Вас.<br>Теперь выбор за Вами</h2><p class="lead">Поддержите программу своего факультета пожертвованием.</p><p>Любой вклад — это настоящая помощь. В благодарность за Ваше доброе дело мы подготовили именной сертификат, обои с аффирмациями и письмо с предсказанием на будущий год.</p>
+ <div id="donation-mount"><form id="donation-form" class="donation-form"><p class="demo-label">Демонстрационная форма · без списания средств</p>
+ <label for="donation-faculty">Выбранный факультет <span aria-hidden="true">*</span></label><select id="donation-faculty" name="faculty" required></select><p class="field-hint">Можно поддержать любой факультет</p>
+ <fieldset><legend>Сумма пожертвования</legend><div class="amounts"><button type="button" data-amount="300" aria-pressed="false">300 ₽</button><button type="button" data-amount="500" aria-pressed="true" class="selected">500 ₽</button><button type="button" data-amount="1000" aria-pressed="false">1 000 ₽</button></div><label class="sr-only" for="amount">Другая сумма в рублях</label><input id="amount" name="amount" type="number" min="1" step="1" value="500" required placeholder="Другая сумма, ₽"></fieldset>
+ <label for="donor-name">Ваше имя <span aria-hidden="true">*</span></label><input id="donor-name" name="name" autocomplete="given-name" maxlength="60" required placeholder="Имя для сертификата">
+ <label for="donor-email">Электронная почта <span aria-hidden="true">*</span></label><input id="donor-email" name="email" type="email" autocomplete="email" required placeholder="Для подарков и письма с предсказанием">
+ <button class="button" type="submit">Пожертвовать <span aria-hidden="true">✦</span></button><p class="form-note">Это пример будущей формы. Данные никуда не отправляются.</p>
+ </form></div></div><div class="gift-placeholder" role="img" aria-label="Место для изображения сертификатов и обоев"><span aria-hidden="true">✦</span><p>Здесь появятся<br>Ваши волшебные подарки</p><small>Сертификат и обои с аффирмациями</small></div></section>
+ <section class="section share panel" aria-labelledby="share-title"><div class="share-copy"><h2 id="share-title">Пригласите друзей<br>в Школу доброй магии</h2><p>Волшебством хочется делиться. Отправьте друзьям приглашение в Школу доброй магии фонда «Правмир» — пусть они тоже узнают свою силу и откроют свой способ помогать.</p><p>Нажмите «Поделиться магией», чтобы выбрать способ отправки, скопировать ссылку или сохранить карточку.</p><button class="button" data-share>✦ Поделиться магией ✦</button></div><img src="assets/share-owl.webp" alt="Сова с волшебным письмом" width="1264" height="1254" loading="lazy"></section>
+ <section class="thanks" aria-labelledby="thanks-title"><p>У каждого есть своя магия.<br>Для кого-то это умение лечить.<br>Для кого-то — находить ответы.<br>Для кого-то — защищать.<br>А для кого-то — просто однажды не пройти мимо.</p><h2 id="thanks-title">Спасибо,<br>что выбрали помогать!</h2><a class="button" href="https://fondpravmir.ru/vse-sboryi-sredstv/" target="_blank" rel="noopener">Узнать, кому помогает фонд <span aria-hidden="true">✦</span></a></section>
+ <section class="partners section" aria-labelledby="partners-title"><h2 id="partners-title">Наши партнёры</h2><div class="partner-window" tabindex="0" aria-label="Логотипы партнёров. Наведите курсор или установите фокус, чтобы остановить прокрутку"><div id="partner-track" class="partner-track"></div></div></section>
+ <div class="closing-spark" aria-hidden="true"><img src="assets/spark-3.webp" alt="" loading="lazy"></div>
+</main>
+<footer><div class="footer-inner"><a href="https://fondpravmir.ru/" target="_blank" rel="noopener"><img class="logo" src="assets/logo.svg" alt="Фонд Правмир" width="180" height="42" loading="lazy"></a><div class="footer-links"><a id="policy-link" hidden>Политика конфиденциальности</a><a id="offer-link" hidden>Публичная оферта</a><a href="mailto:help@fondpravmir.ru">help@fondpravmir.ru</a></div><p>© Благотворительный фонд «Правмир», 2026</p></div></footer>
+<dialog id="modal" aria-labelledby="modal-title"><button class="modal-close" type="button" aria-label="Закрыть окно">×</button><div id="modal-content"></div></dialog><div class="toast" id="toast" role="status"></div>
+<noscript><div class="noscript">Для письма, теста и подарков включите JavaScript в браузере. <a href="https://fondpravmir.ru/vse-sboryi-sredstv/">Помочь на сайте фонда</a></div></noscript>
+</body></html>
